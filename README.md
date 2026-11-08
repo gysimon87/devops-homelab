@@ -1,66 +1,95 @@
-# devops-homelab
-Personal DevOps and Linux homelab projects, infrastructure configuration and automation.
-DevOps Homelab
+# DevOps Homelab
 
-Overview
+Personal DevOps and Linux homelab projects, infrastructure configuration, and automation.
+
+## Overview
 
 This repository documents my personal DevOps and Linux homelab environment.
 
-The main goal is to develop practical skills in Linux system administration, networking, automation, infrastructure management, and monitoring through hands-on projects.
+The main goal is to develop practical skills in Linux system administration, networking, scripting, automation, and infrastructure management through hands-on projects.
 
 The environment is built using local virtualization and gradually expanded with additional DevOps tools and technologies.
 
-Lab Environment
+## Lab Environment
 
-Component	Configuration
-Hypervisor	Oracle VirtualBox
-Host OS	Windows 11
-Server OS	Ubuntu Server
-Virtual Machine	ubuntu-server-01
-Network	NAT + Host-only
-Remote Access	OpenSSH
+| Component | Configuration |
+|---|---|
+| Host OS | Windows 11 |
+| Hardware | HP EliteDesk 800 G4 DM |
+| CPU | Intel Core i5-8500 |
+| Memory | 16 GB DDR4 |
+| Hypervisor | Oracle VirtualBox |
+| Server OS | Ubuntu Server |
+| Virtual Machine | ubuntu-server-01 |
+| Memory Allocation | 4 GB |
+| Network | NAT + Host-only |
+| Remote Access | OpenSSH |
 
-Projects
+## Projects and Practical Exercises
 
-Linux System Administration
+### Linux System Administration
 
-* Linux command-line fundamentals
-* User and permission management
-* Process and service management
-* System logs and troubleshooting
-* Scheduled tasks with cron
+- Linux command-line fundamentals
+- User and group management
+- File permissions and ownership
+- setgid and umask
+- Process and service management
+- System logs and troubleshooting
+- Scheduled tasks with cron
 
-Networking
+### Networking and Security
 
-* VirtualBox NAT and Host-only networking
-* IP configuration and routing
-* SSH remote access
+- VirtualBox NAT and Host-only networking
+- IP configuration and routing
+- DNS resolution
+- Network socket inspection
+- Firewall configuration with UFW
+- SSH remote access
 
-Scripting and Automation
+### Scripting and Automation
 
-* Bash scripting
-* System health checks
-* Task automation
+- Bash scripting
+- File and directory checks
+- HTTP health checks
+- System health checks
+- Task automation
 
-Monitoring and Infrastructure
+### Cloud and DevOps
 
-* System resource monitoring
-* Service availability checks
-* Infrastructure automation
+Planned learning areas:
 
-Learning Objectives
+- Python scripting
+- Git and version control
+- Infrastructure as Code (Terraform / OpenTofu)
+- Configuration management with Ansible
+- Docker and containerization
+- Kubernetes
+- CI/CD pipelines
+- Cloud infrastructure
 
-* Strengthen Linux administration skills
-* Understand networking and server infrastructure
-* Develop Bash and Python scripting skills
-* Learn Infrastructure as Code (IaC)
-* Gain practical experience with Ansible, Docker, and Kubernetes
-* Build and document reproducible infrastructure projects
+## Documentation
 
-Documentation
+Detailed documentation of completed exercises:
 
-Each project includes its objectives, environment, implementation steps, verification procedures, and lessons learned.
+| Document | Description |
+|---|---|
+| [Server Environment](linux/server-environment.md) | Lab infrastructure and server configuration |
+| [Users, Groups and Permissions](linux/users-groups-permissions.md) | Linux user management, permissions, setgid and umask |
+| [Networking and Firewall](linux/networking-and-firewall.md) | Network interfaces, routing, DNS, sockets and UFW |
 
-Status
+Each document includes objectives, implementation details, verification procedures, and lessons learned.
 
-This is an ongoing learning project. New technologies, configurations, and practical exercises will be added as the lab evolves.
+## Learning Objectives
+
+- Strengthen Linux system administration skills.
+- Understand networking and server infrastructure.
+- Develop Bash and Python scripting skills.
+- Learn Infrastructure as Code (IaC).
+- Gain practical experience with Ansible, Docker, and Kubernetes.
+- Build and document reproducible infrastructure projects.
+
+## Status
+
+This is an ongoing learning project.
+
+New technologies, configurations, and practical exercises will be added as the lab evolves.

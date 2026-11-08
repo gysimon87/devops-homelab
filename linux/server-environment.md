@@ -52,10 +52,12 @@ Storage
 
 The root filesystem uses LVM.
 
-Component	Configuration
-Root Logical Volume	17 GB
-Filesystem Usage	Approximately 6.2 GB
-Filesystem Utilization	Approximately 41%
+| Component | Configuration |
+|---|---|
+| Root Logical Volume | 33 GB |
+| Filesystem Used Space | Approximately 6.3 GB |
+| Filesystem Available Space | Approximately 25 GB |
+| Filesystem Utilization | Approximately 21% |
 
 System Verification
 
@@ -79,7 +81,6 @@ Current Status
 
 Next Steps
 
-* Document Linux user and permission management.
 * Document process and service management.
 * Document system logging and troubleshooting.
 * Expand Bash scripting and automation exercises.

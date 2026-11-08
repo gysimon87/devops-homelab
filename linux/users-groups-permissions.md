@@ -1,5 +1,3 @@
-Add Linux users groups and permissions documentation
-
 Linux Users, Groups and Permissions
 
 1. Objective
