@@ -1,0 +1,28 @@
+name: ShellCheck
+
+on:
+  push:
+    branches:
+      - main
+      - feature/shellcheck-ci
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  shellcheck:
+    name: Run ShellCheck
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: Run ShellCheck
+        run: |
+          find . -type f -name "*.sh" -not -path "./.git/*" -print0 | xargs -0 -r shellcheck
